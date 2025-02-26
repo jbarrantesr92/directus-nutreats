@@ -516,7 +516,7 @@ export class UsersService extends ItemsService {
 			mailService
 				.send({
 					to: input.email,
-					subject: 'Verify your email address', // TODO: translate after theres support for internationalized emails
+					subject: 'Verificación de correo electrónico', // TODO: translate after theres support for internationalized emails
 					template: {
 						name: 'user-registration',
 						data: {
