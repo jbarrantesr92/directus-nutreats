@@ -332,6 +332,7 @@
                         color: #171717;
                       "
                     >
+                    {% if projectUrl %}
                       <a
                         style="
                           -webkit-text-size-adjust: 100%;
@@ -339,7 +340,7 @@
                           text-decoration: underline;
                           color: #171717;
                         "
-                        href="j{ projectUrl }}"
+                        href="{{ projectUrl }}"
                         target="_blank"
                         >Manage Your Account</a
                       >{% endif %}<br />
