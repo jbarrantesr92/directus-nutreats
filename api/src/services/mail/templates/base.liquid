@@ -170,4 +170,123 @@
               cellspacing="0"
               width="100%"
               style="
-               
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+                border-collapse: collapse !important;
+                max-width: 600px;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td
+                    align="left"
+                    valign="top"
+                    style="
+                      -webkit-text-size-adjust: 100%;
+                      -ms-text-size-adjust: 100%;
+                      mso-table-lspace: 0pt;
+                      mso-table-rspace: 0pt;
+                      padding: 0 0 40px 0;
+                    "
+                  >
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td align="center" valign="middle">
+                            <img
+                              id="logo"
+                              src="{{ projectLogo }}"
+                              alt="{{ projectName }} Logo"
+                              width="40"
+                              height="40"
+                              border="0"
+                              style="
+                                -ms-interpolation-mode: bicubic;
+                                border: 1px solid white;
+                                border-radius: 8px;
+                                height: 40px;
+                                width: 40px;
+                                line-height: 100%;
+                                outline: none;
+                                text-decoration: none;
+                                display: block;
+                                object-fit: contain;
+                                padding: 10px;
+                                background: rgba(255, 255, 255, 0);
+                              "
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    id="content"
+                    align="left"
+                    valign="top"
+                    style="
+                      -webkit-text-size-adjust: 100%;
+                      -ms-text-size-adjust: 100%;
+                      mso-table-lspace: 0pt;
+                      mso-table-rspace: 0pt;
+                      font-family: -apple-system, BlinkMacSystemFont,
+                        'HelveticaNeue-Light', 'Helvetica Neue Light',
+                        'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
+                        sans-serif;
+                      font-size: 16px;
+                      line-height: 26px;
+                      letter-spacing: 0.32px;
+                      margin: 0;
+                      color: #171717;
+                    "
+                  >
+                    <div
+                      style="
+                        color: inherit;
+                        font-size: inherit;
+                        line-height: inherit;
+                      "
+                    >
+                      {% block content %}{{ html }}{% endblock %}
+                    </div>
+
+                    <hr style="margin: 40px 0 20px 0" width="100%" />
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    align="left"
+                    valign="middle"
+                    style="
+                      -webkit-text-size-adjust: 100%;
+                      -ms-text-size-adjust: 100%;
+                      mso-table-lspace: 0pt;
+                      mso-table-rspace: 0pt;
+                      padding: 0 0 20px 0;
+                      font-family: Open Sans, Helvetica, Arial, sans-serif;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 10px 0;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #171717;
+                      "
+                    >
+                      {% block footer %}{% endblock %}
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
