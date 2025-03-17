@@ -518,7 +518,7 @@ export class UsersService extends ItemsService {
 					to: input.email,
 					subject: 'Verificación de correo electrónico', // TODO: translate after theres support for internationalized emails
 					template: {
-						name: 'user-registration',
+						name: 'user-registration-comercio',
 						data: {
 							url: verificationUrl,
 							email: input.email,
